@@ -359,10 +359,15 @@
             <div class="column large-12">
                 <h2>Here is a collection of my data projects </h2>
                 <p>Check them out. </p>
-
             </div>
 
-        </div>
+                <!-- Tab links -->
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'Tableau')">Tableau</button>
+                  <button class="tablinks" onclick="openCity(event, 'Python')">Python</button>
+                  <button class="tablinks" onclick="openCity(event, 'Creative Coding')">Creative Coding</button>
+                </div>
+        
 
 
                 <!-- Tab content -->
@@ -888,13 +893,6 @@
                             </div>
                         </div> <!-- end modal -->
 
-                <!-- Tab links -->
-                <div class="tab">
-                  <button class="tablinks" onclick="openCity(event, 'Tableau')">Tableau</button>
-                  <button class="tablinks" onclick="openCity(event, 'Python')">Python</button>
-                  <button class="tablinks" onclick="openCity(event, 'Creative Coding')">Creative Coding</button>
-                </div>
-
 
 
 
@@ -903,6 +901,7 @@
 
                 <script>
                 function openCity(evt, cityName) {
+                    // Hide all elements with class="tabcontent" by default */
                     var i, tabcontent, tablinks;
                     tabcontent = document.getElementsByClassName("tabcontent");
                     for (i = 0; i < tabcontent.length; i++) {
